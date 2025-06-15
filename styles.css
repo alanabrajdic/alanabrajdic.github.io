@@ -1,10 +1,19 @@
+
+/* Add font files for Helvetica Neue */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('fonts/helvetica-neue.woff2') format('woff2'),
+       url('fonts/helvetica-neue.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
-  --font-family-inter: 'Inter', sans-serif;
-  --text-black: rgba(0, 0, 0, 1);
+  --font-family-helvetica-neue: 'Helvetica Neue', sans-serif;
+  --text-rgb-40-40-40: rgba(40, 40, 40, 1);
 }
 
-.text-black {
-  color: var(--text-black);
+.text-rgb-40-40-40 {
+  color: var(--text-rgb-40-40-40);
 }
 
 
@@ -26,34 +35,84 @@ img {
   height: auto;
 }
 
-.text-2 {
+.text-5 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-helvetica-neue);
+  font-weight: normal;
+  font-size: 32px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-40-40-40);
+}
+
+.wrapper-4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 100px 0px 100px 0px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.page-main-title-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+  min-width: 300px;
+  max-width: 1200px;
+}
+
+.content-body-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 100px;
+  padding: 100px 0px 100px 0px;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
-  font-family: var(--font-family-inter);
-  font-weight: 700;
-  font-size: 60px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-black);
+  min-width: 300px;
+  max-width: 1200px;
 }
 
-.frontpage-1 {
+.page-body-2-working-1 {
 @media (max-width: 1440px) {
-  .frontpage-1 {
+  .page-body-2-working-1 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media (max-width: 768px) {
-  .frontpage-1 {
+  .page-body-2-working-1 {
     padding-left: 16px;
     padding-right: 16px;
   }
 }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 50px 0px 50px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 3077px;
   flex-grow: 0;
   flex-shrink: 1;
-  flex-basis: auto;
-  background-color: rgba(255, 255, 255, 1);
+  width: NaN%;
+  background-color: rgba(238, 238, 238, 1);
 }
